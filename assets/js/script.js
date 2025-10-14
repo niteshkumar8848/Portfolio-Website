@@ -95,3 +95,26 @@ emailjs.init("Q3CK3b1n1JOfdNCJt");
       this.classList.add('bounce--replay');
     });
   });
+
+  /* Footer social links: prevent mouse click from leaving the element in :focus state
+     which can stop CSS hover animations from re-triggering. We blur on pointerdown
+     for mouse/touch but keep keyboard focus behavior for accessibility (focus-visible).
+     Also toggle a replay class if you decide to add keyframe animations. */
+  const socialLinks = document.querySelectorAll('.footer-socials .social-link');
+  socialLinks.forEach(link => {
+    // blur on pointerdown so :focus doesn't stick after clicking with mouse/touch
+    link.addEventListener('pointerdown', (e) => {
+      // only blur when interaction is not from keyboard
+      if (e.pointerType === 'mouse' || e.pointerType === 'touch' || e.pointerType === 'pen') {
+        // delay blur slightly so the click still follows the link normally
+        requestAnimationFrame(() => link.blur());
+      }
+    });
+
+    // Optional: replay helper for any custom animations
+    link.addEventListener('click', function () {
+      this.classList.remove('bounce--replay');
+      void this.offsetWidth;
+      this.classList.add('bounce--replay');
+    });
+  });

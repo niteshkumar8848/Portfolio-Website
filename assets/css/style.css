@@ -1084,7 +1084,9 @@ textarea.contact-input {
     transition: transform 0.15s ease-in-out, background 0.15s ease-in-out ;
   }
 
-  .footer-socials .social-link:is(:hover, :focus) {
+  /* Use focus-visible so mouse clicks don't permanently apply the focus state
+     (keeps keyboard accessibility while preventing mouse-clicks from 'sticking') */
+  .footer-socials .social-link:is(:hover, :focus-visible) {
     transform: translateY(-4px);
     background: var(--orange-soda);
   }
