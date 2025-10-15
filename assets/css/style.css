@@ -159,7 +159,8 @@ body {
 strong{
   /* font-weight: var(--fw-200); */
   display: inline-block;
-  color: var(--orange-soda);
+  /* color: var(--orange-soda); */
+  color: rgb(84, 255, 221);
   overflow: hidden;
   border-right: 4px solid var(--white);
   white-space: nowrap;
@@ -265,7 +266,10 @@ strong{
 .section-text { text-align: center; }
 
 
-
+.view-project:is(:hover) {
+  color: var(--bluetiful);
+  
+}
 
 
 /*-----------------------------------*\
@@ -296,9 +300,23 @@ strong{
 }
 
 .logo {
-  color: var(--white);
-  font-family: var(--ff-poppins);
   font-size: 2.4rem;
+  /* color: var(--minion-yellow);  */
+  /* color: rgb(84, 255, 221); */
+  color: var(--orange-soda);
+  font-family: 'Great Vibes', cursive; 
+  font-style: oblique; 
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(13, 12, 12, 0.5);
+}
+
+.logo:hover {
+  /* color: var(--bluetiful); */
+  font-size: 2.6rem;
+  /* transition: font-size 0.4s ease-in-out; */
+  transform: translateY(-1.5px);
+  transition: transform 0.8s ease-in-out;
+
 }
 
 .nav-toggle-btn { font-size: 3rem; }
@@ -483,6 +501,23 @@ strong{
 .portfolio-card .btn-link ion-icon {
   color: var(--orange-soda);
   font-size: 1.6rem;
+}
+
+/* View project small inline link inside portfolio cards */
+.view-project {
+  display: inline-block;
+  color: rgb(255, 203, 119);
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 8px;
+  transition: color 0.2s ease-in-out, transform 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+/* When the card is hovered or focused, make the view-project text more prominent */
+.view-project:is(:hover) {
+  color: rgb(84, 255, 221);
+  transform: translateY(-1.5px);
 }
 
 
