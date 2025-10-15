@@ -163,7 +163,7 @@ strong{
   overflow: hidden;
   border-right: 4px solid var(--white);
   white-space: nowrap;
-  margin: 0 auto;
+  margin: 0;
   letter-spacing: normal;
   animation: 
   typing 3s steps(30, end),
@@ -177,6 +177,26 @@ strong{
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: var(--white); }
+}
+
+/* Mobile / small screen fixes ------------------------------------------------- */
+@media (max-width: 767px) {
+  /* Prevent the typing width animation from shifting layout on small screens.
+     Keep only the blinking caret and make the strong text inline so following
+     content stays close to the name. Also override inline font-size set in HTML. */
+  .hero-title strong {
+    display: inline;
+    overflow: visible;
+    animation: blink-caret 0.8s step-end infinite;
+    border-right: 3px solid var(--white);
+    white-space: normal; /* allow wrapping if needed */
+    font-size: 3.2rem !important; /* override inline style for mobile */
+    vertical-align: middle;
+    margin: 0 6px 0 0; /* small gap from caret to following text */
+  }
+
+  /* Slightly reduce hero title base size on small screens */
+  .hero-title { font-size: 1.9rem; }
 }
 
 
