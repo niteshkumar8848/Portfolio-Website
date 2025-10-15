@@ -111,6 +111,9 @@ emailjs.init("Q3CK3b1n1JOfdNCJt");
       }
     });
 
+
+    
+
     // Optional: replay helper for any custom animations
     link.addEventListener('click', function () {
       this.classList.remove('bounce--replay');

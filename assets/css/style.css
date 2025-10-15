@@ -105,7 +105,6 @@ a,
 img,
 span,
 input,
-strong,
 button,
 textarea,
 ion-icon { display: block; }
@@ -156,7 +155,29 @@ body {
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
+/* Strong  */
+strong{
+  /* font-weight: var(--fw-200); */
+  display: inline-block;
+  color: var(--orange-soda);
+  overflow: hidden;
+  border-right: 4px solid var(--white);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: normal;
+  animation: 
+  typing 3s steps(30, end),
+  blink-caret 0.8s step-end infinite;
+}
 
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--white); }
+}
 
 
 
@@ -175,11 +196,16 @@ body {
   padding: var(--padding, 10px 40px);
   border-radius: 50px;
   transition: var(--transition-2);
+  box-shadow: 2px 2px 20px var(--manatee);
 }
 
 .btn-primary.blue { background-color: var(--klein-blue); }
 
 .btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
+
+.btn-primary.orange { background-color: var(--orange-soda); }
+
+.btn-primary.orange:is(:hover,) { background-color: var(--klein-blue); }
 
 .img-cover {
   width: 100%;
@@ -286,7 +312,11 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+.navbar-link:is(:hover, :focus) {
+   color: var(--orange-soda);
+   text-decoration: underline;
+   text-underline-offset: 5px;
+   }
 
 .navbar .btn {
   background-color: var(--orange-soda);
@@ -683,7 +713,7 @@ textarea.contact-input {
 \*-----------------------------------*/
 
 .back-to-top {
-  color: var(--white);
+  /* color: var(--midnight-blue); */
   font-size: 1.3rem;
   position: fixed;
   bottom: 100px;
