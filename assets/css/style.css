@@ -1023,7 +1023,7 @@ textarea.contact-input {
    */
 
   .about { 
-    padding-block: 180px; 
+    padding-block: 130px; 
   }
 
   .about .container {
@@ -1142,8 +1142,12 @@ textarea.contact-input {
   .footer .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 50;
+    align-items: left;
+    width: 1000px;
+  }
+
+  .footer{
+    padding-block: 25px;
   }
 
   .copyright,
@@ -1173,8 +1177,6 @@ textarea.contact-input {
     transition: transform 0.15s ease-in-out, background 0.15s ease-in-out ;
   }
 
-  /* Use focus-visible so mouse clicks don't permanently apply the focus state
-     (keeps keyboard accessibility while preventing mouse-clicks from 'sticking') */
   .footer-socials .social-link:is(:hover, :focus-visible) {
     transform: translateY(-4px);
     background: var(--orange-soda);
