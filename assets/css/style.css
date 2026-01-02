@@ -574,7 +574,7 @@ strong{
 
 .contact-card {
   background-color: var(--midnight-blue);
-  padding: 50px 25px;
+  padding: 30px 25px;
   border-radius: var(--radius-20);
 }
 
@@ -588,7 +588,10 @@ strong{
 .contact .section-title {
   text-align: left;
   margin-block-end: 30px;
+  
 }
+
+.contact{ padding: 30px 50px;}
 
 .contact-form { margin-block-end: 50px; }
 
@@ -625,7 +628,6 @@ textarea.contact-input {
   background-color: var(--glaucous);
   color: var(--white);
   transition: background-color 0.3s ease-in-out;
-  font-size: var(--fs-4);
   transition: font-size 0.5s ease-in-out;
   
 }
@@ -1020,7 +1022,9 @@ textarea.contact-input {
    * ABOUT
    */
 
-  .about { padding-block: 180px; }
+  .about { 
+    padding-block: 180px; 
+  }
 
   .about .container {
     display: grid;
