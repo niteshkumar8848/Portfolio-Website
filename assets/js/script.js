@@ -70,7 +70,7 @@ emailjs.init("Q3CK3b1n1JOfdNCJt");
     emailjs.send("service_0bounhl", "template_gm35x5o", templateParams)
       .then(function(response) {
         alert("Message Sent Successfully!");
-        document.getElementById('contact-form').reset(); // Clear the form fields after successful submission
+        document.getElementById('contact-form').reset(); 
       }, function(error) {
         alert("Failed to send message. Please try again.");
       });
