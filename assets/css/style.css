@@ -591,7 +591,7 @@ strong{
   
 }
 
-.contact{ padding: 30px 50px;}
+/* .contact{ padding: 30px 40px;} */
 
 .contact-form { margin-block-end: 50px; }
 
@@ -652,6 +652,11 @@ textarea.contact-input {
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
+}
+
+.contact-item-title:hover {
+  color: var(--orange-soda);
+  transition: color 0.3s ease-in-out;
 }
 
 .contact-item-link { 
@@ -1102,7 +1107,7 @@ textarea.contact-input {
  */
 
 .contact-card { 
-  padding: 100px; 
+  padding: 50px; 
 }
 
 .contact .wrapper {
