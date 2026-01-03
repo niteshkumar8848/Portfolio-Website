@@ -69,10 +69,15 @@ emailjs.init("Q3CK3b1n1JOfdNCJt");
     // Send email using EmailJS
     emailjs.send("service_0bounhl", "template_gm35x5o", templateParams)
       .then(function(response) {
-        alert("Message Sent Successfully!");
-        document.getElementById('contact-form').reset(); 
-      }, function(error) {
-        alert("Failed to send message. Please try again.");
+          document.getElementById('msg-sub').innerHTML = '<div style=" position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);background-color:hsl(224, 24%, 27%);padding: 15px 25px;border-radius: 15px;text-align: center;z-index: 1000;"><h3 style="margin:0; color: var(--white);">Message Sent Successfully!</h3></div>';
+          
+          setTimeout(() => {
+            document.getElementById('msg-sub').innerHTML = '';
+          }, 4000);
+          
+          document.getElementById('contact-form').reset(); 
+        }, function(error) {
+          alert("Failed to send message. Please try again.");
       });
   });
 
