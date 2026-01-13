@@ -733,6 +733,9 @@ textarea.contact-input {
 
 
 .copyright {
+  color: var(--cadet-blue-crayola);
+  font-size: var(--fs-6);
+  padding-left: auto;
   max-width: max-content;
   margin-inline: auto;
   margin-block-end: 10px;
