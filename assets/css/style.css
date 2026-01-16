@@ -217,16 +217,16 @@ strong{
   padding: var(--padding, 10px 40px);
   border-radius: 50px;
   transition: var(--transition-2);
-  box-shadow: 2px 2px 20px var(--manatee);
+  /* box-shadow: 2px 2px 20px var(--manatee); */
 }
 
 .btn-primary.blue { background-color: var(--klein-blue); }
 
-.btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
+.btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda);  box-shadow: 2px 2px 20px var(--manatee); }
 
 .btn-primary.orange { background-color: var(--orange-soda); }
 
-.btn-primary.orange:is(:hover,) { background-color: var(--klein-blue); }
+.btn-primary.orange:is(:hover,) { background-color: var(--klein-blue);  box-shadow: 2px 2px 20px var(--manatee); }
 
 .img-cover {
   width: 100%;
