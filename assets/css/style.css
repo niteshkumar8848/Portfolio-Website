@@ -243,12 +243,6 @@ strong{
   text-align: center;
 }
 
-/* h1{
-  color: var(--orange-soda);
-  font-family: var(--ff-barlow);
-  font-size: var(--fs-4);
-  text-align: center;
-} */
 
 .h2,
 .h3 {
@@ -301,8 +295,6 @@ strong{
 
 .logo {
   font-size: 2.4rem;
-  /* color: var(--minion-yellow);  */
-  /* color: rgb(84, 255, 221); */
   color: var(--orange-soda);
   font-family: 'Great Vibes', cursive; 
   font-style: oblique; 
@@ -312,7 +304,6 @@ strong{
 }
 
 .logo:hover {
-  /* color: var(--bluetiful); */
   color: rgb(84, 255, 221);
   text-shadow: 5px 5px 10px rgba(84, 255, 221, 0.5);
 }
@@ -472,8 +463,6 @@ strong{
 
 
 
-
-
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -613,7 +602,6 @@ strong{
   
 }
 
-/* .contact{ padding: 30px 40px;} */
 
 .contact-form { margin-block-end: 50px; }
 
@@ -690,59 +678,6 @@ textarea.contact-input {
 
 
 
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog { padding-block-end: 120px; }
-
-.blog .section-title { margin-block-end: 20px; }
-
-.blog .section-text { margin-block-end: 80px; }
-
-.blog-list {
-  display: grid;
-  gap: 40px;
-}
-
-.blog-card { font-family: var(--ff-barlow); }
-
-.blog-card .card-banner {
-  background-color: var(--independence);
-  border-radius: var(--radius-15);
-  overflow: hidden;
-  margin-block-end: 20px;
-}
-
-.blog-card .card-banner img { transition: var(--transition-2); }
-
-.blog-card .card-banner a:is(:hover, :focus) img { transform: scale(1.1); }
-
-.blog-card .card-banner:focus-within {
-  outline: 2px solid var(--white);
-  outline-offset: 4px;
-}
-
-.blog-card .card-tag {
-  color: var(--orange-soda);
-  margin-block-end: 5px;
-}
-
-.blog-card .card-title {
-  color: var(--white);
-  font-weight: var(--fw-600);
-  line-height: 1.3;
-}
-
-.blog-card .card-title a { transition: var(--transition-2); }
-
-.blog-card .card-title a:is(:hover, :focus) { color: var(--orange-soda); }
-
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -800,7 +735,6 @@ textarea.contact-input {
 \*-----------------------------------*/
 
 .back-to-top {
-  /* color: var(--midnight-blue); */
   font-size: 1.3rem;
   position: fixed;
   bottom: 100px;
@@ -836,33 +770,14 @@ textarea.contact-input {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
- * responsive for larger than 600px screen
- */
-
 @media (min-width: 600px) {
-
-  /**
-   * PORTFOLIO
-   */
 
   .portfolio-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
 
 }
 
 
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
-
-  /**
-   * PORTFOLIO
-   */
 
   .portfolio-card {
     background-size: 115%;
@@ -871,11 +786,6 @@ textarea.contact-input {
 
   .portfolio-card:is(:hover, :focus) { background-size: 130%; }
 
-
-
-  /**
-   * SKILLS, BLOG
-   */
 
   .skills-list,
   .blog-list {
@@ -887,11 +797,6 @@ textarea.contact-input {
 
 
 
-
-
-/**
- * responsive for larger than 992px screen
- */
 
 @media (min-width: 992px) {
 
@@ -945,7 +850,8 @@ textarea.contact-input {
   }
 
   .header.active {
-    background-color: var(--space-cadet);
+    /* background-color: var(--space-cadet); */
+    background-color: hsl(243deg 23% 18% / 98%);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
