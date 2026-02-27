@@ -850,8 +850,8 @@ textarea.contact-input {
   }
 
   .header.active {
-    /* background-color: var(--space-cadet); */
-    background-color: hsl(243deg 23% 18% / 98%);
+    backdrop-filter: blur(2px);
+    background-color: hsl(243deg 23% 18% / 95%);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
