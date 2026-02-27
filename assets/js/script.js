@@ -80,7 +80,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   }
   
   if (!nameRegex.test(name)) {
-    showInlinePopup('Please enter a valid name (letters, spaces, dots, hyphens only).');
+    showInlinePopup('Please enter a valid name.');
     return;
   }
 
@@ -100,7 +100,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   });
   
   if (foundNegative) {
-    showInlinePopup('Please send a positive message. Negative messages are not allowed.');
+    showInlinePopup('Negative messages are not allowed.');
     return;
   }
 
