@@ -912,7 +912,8 @@ textarea.contact-input {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: var(--white);
+    background-color: hsl(0deg 0% 100% / 90%);
+    backdrop-filter: blur(2px);
     border-radius: var(--radius-10);
     padding: 20px;
   }
