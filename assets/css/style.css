@@ -772,7 +772,7 @@ textarea.contact-input {
 
 @media (min-width: 600px) {
 
-  .portfolio-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
+  .portfolio-list li:nth-child(even) .card-content { margin-inline-start: 60%; }
 
 }
 
