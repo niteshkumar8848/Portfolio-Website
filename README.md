@@ -1,4 +1,4 @@
-# <span style="color: #ff8c42">Professional Portfolio Website</span> **Important**: This is the private portfolio Website.
+# <span style="color: #ff8c42">Professional Portfolio Website</span>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Portfolio-Personal-blue?style=for-the-badge&logo=website" alt="Portfolio Preview">
